@@ -1,0 +1,128 @@
+/* Basic page styling */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f5eaead5;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 270px; /* space for floating dog box */
+}
+
+/* Paragraphs */
+p {
+  max-width: 600px;
+  margin-bottom: 1.2em;
+  font-size: 1.05rem;
+}
+
+/* Links */
+a {
+  color: #002fca;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+
+a:hover {
+  color: rgb(0, 57, 133);
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+/* Title section with logos */
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+/* Small logos beside the heading */
+.logo {
+  width: 48px;
+  height: 48px;
+}
+
+/* Main heading */
+#heading {
+  font-size: 3rem;
+  text-decoration-line: underline;
+  color: #44caa2;
+  text-align: center;
+  margin: 0;
+  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Image container for home page */
+#pics_home_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+/* Each image same size */
+#pics_home_page img {
+  width: 250px;
+  height: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+  transition: transform 0.2s ease;
+}
+
+#pics_home_page img:hover {
+  transform: scale(1.1);
+}
+
+/* Centered text box */
+.text-center {
+  justify-content: center;
+  align-items: center;
+}
+
+#box {
+  background-color: #f0f8ff;
+  border: 2px solid #44caa2;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;          /* fill available space */
+  max-width: 650px;
+  margin: 20px auto;    /* center horizontally */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.45);
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  box-sizing: border-box;  /* include padding/border in width */
+}
+
+.dog {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  width: 200px;
+  height: auto;
+  text-align: center;
+  z-index: 1000;
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.dog img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.dog_text {
+  font-size: 1rem;
+  color: #333;
+}
